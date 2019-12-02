@@ -42,8 +42,6 @@ public class RunMatsimTest{
 			} ;
 			RunMatsim.main( args ) ;
 
-			Assert.fail();
-
 		} catch ( Exception ee ) {
 			Logger.getLogger(this.getClass()).fatal("there was an exception: \n" + ee ) ;
 
@@ -54,4 +52,12 @@ public class RunMatsimTest{
 
 	}
 
+	@Test
+	public void main() {
+		Assert.fail();
+	}
+
+	@Test
+	public void testMain() {
+	}
 }
